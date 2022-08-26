@@ -4,14 +4,17 @@
 #Task1
 
 
-def Norm(text):
+def norm(text):
     text.lower()
     text.capitalize()
-    text = print(text.capitalize()+'!')
+    text = str(text.capitalize() +'!')
     return text
 
-print(Norm('TODAY we Have a lot to DO'))
-
+print()
+print("Orginal Sentence: " + str("TODAY we Have a lot to DO"))
+print()
+print("Normalized: " + norm("TODAY we Have a lot to DO"))
+print()
 
 
 
