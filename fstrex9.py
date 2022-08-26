@@ -8,12 +8,15 @@ def norm(text):
     text.lower()
     text.capitalize()
     text = str(text.capitalize() +'!')
+    text.replace(".", " ")
     return text
-
+    
 print()
-print("Orginal Sentence: " + str("TODAY we Have a lot to DO"))
+text = str(input("Put a Sentence in: "))
 print()
-print("Normalized: " + norm("TODAY we Have a lot to DO"))
+print("Orginal Sentence: " + text )
+print()
+print("Normalized: " + norm(text))
 print()
 
 
